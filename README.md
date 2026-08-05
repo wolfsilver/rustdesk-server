@@ -79,6 +79,8 @@
 
 [**下载**](https://github.com/lejianwen/rustdesk-server/releases)
 
+[**Configuration & environment variables**](docs/environment-variables.md)
+
 [**说明文件**](https://rustdesk.com/docs/zh-cn/self-host/)
 
 自行搭建属于你的RustDesk服务器,所有的一切都是免费且开源的
