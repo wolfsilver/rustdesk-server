@@ -309,7 +309,7 @@ jobs:
         if: github.event_name != 'workflow_dispatch'
         with:
           base-image: ${{ env.GHCR_IMAGE }}:${{ env.GIT_TAG }}
-          extra-images: ${{ env.GHCR_IMAGE }}:${{ env.GIT_TAG }}-amd64,${{ env.GHCR_IMAGE }}:${{ env.GIT_TAG }}-arm64v8,${{ env.GHCR_IMAGE }}:${{ env.GIT_TAG }}-armv7,${{ env.GHCR_IMAGE }}:${{ env.GIT_TAG }}-i386
+          extra-images: ${{ env.GHCR_IMAGE }}:${{ env.GIT_TAG }}-amd64,${{ env.GHCR_IMAGE }}:${{ env.GIT_TAG }}-arm64v8,${{ env.GHCR_IMAGE }}:${{ env.GIT_TAG }}-armv7
           push: true
 
       # manifest for :1 tag (major release)
@@ -317,7 +317,7 @@ jobs:
         uses: Noelware/docker-manifest-action@0.4.3
         with:
           base-image: ${{ env.GHCR_IMAGE }}:${{ env.MAJOR_TAG }}
-          extra-images: ${{ env.GHCR_IMAGE }}:${{ env.MAJOR_TAG }}-amd64,${{ env.GHCR_IMAGE }}:${{ env.MAJOR_TAG }}-arm64v8,${{ env.GHCR_IMAGE }}:${{ env.MAJOR_TAG }}-armv7,${{ env.GHCR_IMAGE }}:${{ env.MAJOR_TAG }}-i386
+          extra-images: ${{ env.GHCR_IMAGE }}:${{ env.MAJOR_TAG }}-amd64,${{ env.GHCR_IMAGE }}:${{ env.MAJOR_TAG }}-arm64v8,${{ env.GHCR_IMAGE }}:${{ env.MAJOR_TAG }}-armv7
           push: true
 
       # manifest for :latest tag
@@ -325,7 +325,7 @@ jobs:
         uses: Noelware/docker-manifest-action@0.4.3
         with:
           base-image: ${{ env.GHCR_IMAGE }}:${{ env.LATEST_TAG }}
-          extra-images: ${{ env.GHCR_IMAGE }}:${{ env.LATEST_TAG }}-amd64,${{ env.GHCR_IMAGE }}:${{ env.LATEST_TAG }}-arm64v8,${{ env.GHCR_IMAGE }}:${{ env.LATEST_TAG }}-armv7,${{ env.GHCR_IMAGE }}:${{ env.LATEST_TAG }}-i386
+          extra-images: ${{ env.GHCR_IMAGE }}:${{ env.LATEST_TAG }}-amd64,${{ env.GHCR_IMAGE }}:${{ env.LATEST_TAG }}-arm64v8,${{ env.GHCR_IMAGE }}:${{ env.LATEST_TAG }}-armv7
           push: true
 
 
