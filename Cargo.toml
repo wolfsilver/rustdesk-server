@@ -63,6 +63,7 @@ reqwest = { git = "https://github.com/rustdesk-org/reqwest", features = ["blocki
 
 [build-dependencies]
 hbb_common = { path = "libs/hbb_common" }
+native-tls = { version = "0.2", features = ["vendored"] }
 
 [workspace]
 members = ["libs/hbb_common"]
