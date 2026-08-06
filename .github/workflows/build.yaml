@@ -4,7 +4,7 @@ name: build
 # please ensure github actions can push to GHCR with packages: write permission
 
 permissions:
-  contents: read
+  contents: write
   packages: write
 
 on:
